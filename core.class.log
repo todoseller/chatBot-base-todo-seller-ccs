@@ -1,0 +1,347 @@
+[handleMsg]:  {
+  key: {
+    remoteJid: '584244365940@s.whatsapp.net',
+    fromMe: false,
+    id: '3A0B9E23FFB92F8B25E5',
+    participant: undefined
+  },
+  messageTimestamp: 1714160786,
+  pushName: 'Millie',
+  broadcast: false,
+  message: Message {
+    conversation: 'Se fue la luz',
+    messageContextInfo: MessageContextInfo {
+      deviceListMetadata: [DeviceListMetadata],
+      deviceListMetadataVersion: 2
+    }
+  },
+  body: 'Se fue la luz',
+  from: '584244365940'
+}
+[handleMsg]:  {
+  key: {
+    remoteJid: '584244365940@s.whatsapp.net',
+    fromMe: false,
+    id: '3A3B65541AB1D68A7B20',
+    participant: undefined
+  },
+  messageTimestamp: 1714160791,
+  pushName: 'Millie',
+  broadcast: false,
+  message: Message {
+    conversation: 'Y el carro adentro',
+    messageContextInfo: MessageContextInfo {
+      deviceListMetadata: [DeviceListMetadata],
+      deviceListMetadataVersion: 2
+    }
+  },
+  body: 'Y el carro adentro',
+  from: '584244365940'
+}
+[handleMsg]:  {
+  key: {
+    remoteJid: '584244365940@s.whatsapp.net',
+    fromMe: false,
+    id: '3A7BCF1354CAB6FD84D1',
+    participant: undefined
+  },
+  messageTimestamp: 1714160817,
+  pushName: 'Millie',
+  broadcast: false,
+  message: Message {
+    conversation: 'Porque pensé que no se iba y habían carros afuera del lado del edificio',
+    messageContextInfo: MessageContextInfo {
+      deviceListMetadata: [DeviceListMetadata],
+      deviceListMetadataVersion: 2
+    }
+  },
+  body: 'Porque pensé que no se iba y habían carros afuera del lado del edificio',
+  from: '584244365940'
+}
+[handleMsg]:  {
+  key: {
+    remoteJid: '584123765996@s.whatsapp.net',
+    fromMe: false,
+    id: '8AD32541E9ED202AB1D064B759333798',
+    participant: undefined
+  },
+  messageTimestamp: 1714161637,
+  pushName: 'Kepler 360',
+  broadcast: false,
+  message: Message {
+    audioMessage: AudioMessage {
+      url: 'https://mmg.whatsapp.net/v/t62.7117-24/30677324_331337669615835_8144387028270255259_n.enc?ccb=11-4&oh=01_Q5AaIJG7uOD8jc5xeKmkM9WER1BHCc8c1s_S5UoI1GqrdC8X&oe=66538E1A&_nc_sid=5e03e0&mms3=true',
+      mimetype: 'audio/ogg; codecs=opus',
+      fileSha256: [Uint8Array],
+      fileLength: [Long],
+      seconds: 44,
+      ptt: true,
+      mediaKey: [Uint8Array],
+      fileEncSha256: [Uint8Array],
+      directPath: '/v/t62.7117-24/30677324_331337669615835_8144387028270255259_n.enc?ccb=11-4&oh=01_Q5AaIJG7uOD8jc5xeKmkM9WER1BHCc8c1s_S5UoI1GqrdC8X&oe=66538E1A&_nc_sid=5e03e0',
+      mediaKeyTimestamp: [Long],
+      waveform: [Uint8Array]
+    },
+    messageContextInfo: MessageContextInfo {
+      deviceListMetadata: [DeviceListMetadata],
+      deviceListMetadataVersion: 2
+    }
+  },
+  verifiedBizName: 'Kepler 360',
+  body: '_event_voice_note__6ec5fac2-f00b-46c0-a4c7-025ed3857320',
+  from: '584123765996'
+}
+[handleMsg]:  {
+  key: {
+    remoteJid: '584123765996@s.whatsapp.net',
+    fromMe: false,
+    id: 'D1AB762DF9A5E854FD2FDC53172782F0',
+    participant: undefined
+  },
+  messageTimestamp: 1714161646,
+  pushName: 'Kepler 360',
+  broadcast: false,
+  message: Message {
+    audioMessage: AudioMessage {
+      url: 'https://mmg.whatsapp.net/v/t62.7117-24/28643656_304066796067946_5610650777186833615_n.enc?ccb=11-4&oh=01_Q5AaIM29MTyp5EKho-Uqk_EXurmCDk-7iqMTo_Cq-BYPUKug&oe=66537BA5&_nc_sid=5e03e0&mms3=true',
+      mimetype: 'audio/ogg; codecs=opus',
+      fileSha256: [Uint8Array],
+      fileLength: [Long],
+      seconds: 5,
+      ptt: true,
+      mediaKey: [Uint8Array],
+      fileEncSha256: [Uint8Array],
+      directPath: '/v/t62.7117-24/28643656_304066796067946_5610650777186833615_n.enc?ccb=11-4&oh=01_Q5AaIM29MTyp5EKho-Uqk_EXurmCDk-7iqMTo_Cq-BYPUKug&oe=66537BA5&_nc_sid=5e03e0',
+      mediaKeyTimestamp: [Long],
+      waveform: [Uint8Array]
+    },
+    messageContextInfo: MessageContextInfo {
+      deviceListMetadata: [DeviceListMetadata],
+      deviceListMetadataVersion: 2
+    }
+  },
+  verifiedBizName: 'Kepler 360',
+  body: '_event_voice_note__e2dc4fd6-42c7-4c30-b21e-4f5b1c8725d3',
+  from: '584123765996'
+}
+[handleMsg]:  {
+  key: {
+    remoteJid: '584244365940@s.whatsapp.net',
+    fromMe: false,
+    id: '3AF144B37FC7A015066A',
+    participant: undefined
+  },
+  messageTimestamp: 1714161887,
+  pushName: 'Millie',
+  broadcast: false,
+  message: Message {
+    conversation: 'Bueno compre birras y estoy bebiendo y viendo el teléfono 🤣',
+    messageContextInfo: MessageContextInfo {
+      deviceListMetadata: [DeviceListMetadata],
+      deviceListMetadataVersion: 2
+    }
+  },
+  body: 'Bueno compre birras y estoy bebiendo y viendo el teléfono 🤣',
+  from: '584244365940'
+}
+[handleMsg]:  {
+  key: {
+    remoteJid: '584244365940@s.whatsapp.net',
+    fromMe: false,
+    id: '3AEF2551F16C780D0EFD',
+    participant: undefined
+  },
+  messageTimestamp: 1714161951,
+  pushName: 'Millie',
+  broadcast: false,
+  message: Message {
+    videoMessage: VideoMessage {
+      interactiveAnnotations: [],
+      url: 'https://mmg.whatsapp.net/v/t62.7161-24/55647814_994965582236765_1046033232578760363_n.enc?ccb=11-4&oh=01_Q5AaIGWZSW9aH-pbox-NFX-0V9JnF-gqV4GMWAPSr0LZMvr0&oe=66537706&_nc_sid=5e03e0&mms3=true',
+      mimetype: 'video/mp4',
+      fileSha256: [Uint8Array],
+      fileLength: [Long],
+      seconds: 10,
+      mediaKey: [Uint8Array],
+      height: 848,
+      width: 480,
+      fileEncSha256: [Uint8Array],
+      directPath: '/v/t62.7161-24/55647814_994965582236765_1046033232578760363_n.enc?ccb=11-4&oh=01_Q5AaIGWZSW9aH-pbox-NFX-0V9JnF-gqV4GMWAPSr0LZMvr0&oe=66537706&_nc_sid=5e03e0',
+      mediaKeyTimestamp: [Long],
+      jpegThumbnail: [Uint8Array],
+      streamingSidecar: [Uint8Array]
+    },
+    messageContextInfo: MessageContextInfo {
+      deviceListMetadata: [DeviceListMetadata],
+      deviceListMetadataVersion: 2
+    }
+  },
+  body: '_event_media__873750cf-502c-4197-b56d-c26d1b994510',
+  from: '584244365940'
+}
+[handleMsg]:  {
+  key: {
+    remoteJid: '584244365940@s.whatsapp.net',
+    fromMe: false,
+    id: '3AEB8BC32718F7BED7DD',
+    participant: undefined
+  },
+  messageTimestamp: 1714162003,
+  pushName: 'Millie',
+  broadcast: false,
+  message: Message {
+    imageMessage: ImageMessage {
+      interactiveAnnotations: [],
+      scanLengths: [Array],
+      url: 'https://mmg.whatsapp.net/v/t62.7118-24/40945643_1610686923066654_1158720876332825738_n.enc?ccb=11-4&oh=01_Q5AaICWgUt5C1GLFsb2pGNIM0PzlADgbWdiSv4UfUwsKutJD&oe=66538C09&_nc_sid=5e03e0&mms3=true',
+      mimetype: 'image/jpeg',
+      fileSha256: [Uint8Array],
+      fileLength: [Long],
+      height: 1280,
+      width: 721,
+      mediaKey: [Uint8Array],
+      fileEncSha256: [Uint8Array],
+      directPath: '/v/t62.7118-24/40945643_1610686923066654_1158720876332825738_n.enc?ccb=11-4&oh=01_Q5AaICWgUt5C1GLFsb2pGNIM0PzlADgbWdiSv4UfUwsKutJD&oe=66538C09&_nc_sid=5e03e0',
+      mediaKeyTimestamp: [Long],
+      jpegThumbnail: [Uint8Array],
+      firstScanSidecar: [Uint8Array],
+      firstScanLength: 10034,
+      scansSidecar: [Uint8Array],
+      midQualityFileSha256: [Uint8Array]
+    },
+    messageContextInfo: MessageContextInfo {
+      deviceListMetadata: [DeviceListMetadata],
+      deviceListMetadataVersion: 2
+    }
+  },
+  body: '_event_media__2959eec5-df20-47d8-bd8b-727703f8a82a',
+  from: '584244365940'
+}
+[handleMsg]:  {
+  key: {
+    remoteJid: '584244365940@s.whatsapp.net',
+    fromMe: false,
+    id: '3AE1DEDA9B4594BC7F22',
+    participant: undefined
+  },
+  messageTimestamp: 1714162008,
+  pushName: 'Millie',
+  broadcast: false,
+  message: Message {
+    conversation: '🤣🤣🤣',
+    messageContextInfo: MessageContextInfo {
+      deviceListMetadata: [DeviceListMetadata],
+      deviceListMetadataVersion: 2
+    }
+  },
+  body: '🤣🤣🤣',
+  from: '584244365940'
+}
+[handleMsg]:  {
+  key: {
+    remoteJid: '584123765996@s.whatsapp.net',
+    fromMe: false,
+    id: '5697E9D49AEBBDF8B4CE563022B006F8',
+    participant: undefined
+  },
+  messageTimestamp: 1714162012,
+  pushName: 'Kepler 360',
+  broadcast: false,
+  message: Message {
+    conversation: '150$ de otros bancos diario',
+    messageContextInfo: MessageContextInfo {
+      deviceListMetadata: [DeviceListMetadata],
+      deviceListMetadataVersion: 2
+    }
+  },
+  verifiedBizName: 'Kepler 360',
+  body: '150$ de otros bancos diario',
+  from: '584123765996'
+}
+[handleMsg]:  {
+  key: {
+    remoteJid: '584123765996@s.whatsapp.net',
+    fromMe: false,
+    id: '1E75CCE8BFCFF1AC1956EC39F1BD960C',
+    participant: undefined
+  },
+  messageTimestamp: 1714162017,
+  pushName: 'Kepler 360',
+  broadcast: false,
+  message: Message {
+    conversation: 'Ya le envié el correo',
+    messageContextInfo: MessageContextInfo {
+      deviceListMetadata: [DeviceListMetadata],
+      deviceListMetadataVersion: 2
+    }
+  },
+  verifiedBizName: 'Kepler 360',
+  body: 'Ya le envié el correo',
+  from: '584123765996'
+}
+[handleMsg]:  {
+  key: {
+    remoteJid: '584123765996@s.whatsapp.net',
+    fromMe: false,
+    id: 'BB2F8A956909FA59A7D723A40D6A3AB1',
+    participant: undefined
+  },
+  messageTimestamp: 1714162157,
+  pushName: 'Kepler 360',
+  broadcast: false,
+  message: Message {
+    audioMessage: AudioMessage {
+      url: 'https://mmg.whatsapp.net/v/t62.7117-24/32640482_817992183510970_4527128779627860540_n.enc?ccb=11-4&oh=01_Q5AaIC1yGcAViEDju04IHFh-5ERDdjlcqXQHBu7iysN_y_j3&oe=6653682F&_nc_sid=5e03e0&mms3=true',
+      mimetype: 'audio/ogg; codecs=opus',
+      fileSha256: [Uint8Array],
+      fileLength: [Long],
+      seconds: 21,
+      ptt: true,
+      mediaKey: [Uint8Array],
+      fileEncSha256: [Uint8Array],
+      directPath: '/v/t62.7117-24/32640482_817992183510970_4527128779627860540_n.enc?ccb=11-4&oh=01_Q5AaIC1yGcAViEDju04IHFh-5ERDdjlcqXQHBu7iysN_y_j3&oe=6653682F&_nc_sid=5e03e0',
+      mediaKeyTimestamp: [Long],
+      waveform: [Uint8Array]
+    },
+    messageContextInfo: MessageContextInfo {
+      deviceListMetadata: [DeviceListMetadata],
+      deviceListMetadataVersion: 2
+    }
+  },
+  verifiedBizName: 'Kepler 360',
+  body: '_event_voice_note__ec46579e-3f51-4981-b125-30aa70422760',
+  from: '584123765996'
+}
+[handleMsg]:  {
+  key: {
+    remoteJid: '584123765996@s.whatsapp.net',
+    fromMe: false,
+    id: 'BCDBD768B43407B1B8EA366B17061BBF',
+    participant: undefined
+  },
+  messageTimestamp: 1714162236,
+  pushName: 'Kepler 360',
+  broadcast: false,
+  message: Message {
+    audioMessage: AudioMessage {
+      url: 'https://mmg.whatsapp.net/v/t62.7117-24/32376884_1148433623142064_3599093509761172093_n.enc?ccb=11-4&oh=01_Q5AaIG9loGB1dU7jImigIjnqFcmzguWabi1_78SOJl-fv3mj&oe=665383C7&_nc_sid=5e03e0&mms3=true',
+      mimetype: 'audio/ogg; codecs=opus',
+      fileSha256: [Uint8Array],
+      fileLength: [Long],
+      seconds: 12,
+      ptt: true,
+      mediaKey: [Uint8Array],
+      fileEncSha256: [Uint8Array],
+      directPath: '/v/t62.7117-24/32376884_1148433623142064_3599093509761172093_n.enc?ccb=11-4&oh=01_Q5AaIG9loGB1dU7jImigIjnqFcmzguWabi1_78SOJl-fv3mj&oe=665383C7&_nc_sid=5e03e0',
+      mediaKeyTimestamp: [Long],
+      waveform: [Uint8Array]
+    },
+    messageContextInfo: MessageContextInfo {
+      deviceListMetadata: [DeviceListMetadata],
+      deviceListMetadataVersion: 2
+    }
+  },
+  verifiedBizName: 'Kepler 360',
+  body: '_event_voice_note__56324f32-dbe7-45ea-a6c7-07147a48cdd8',
+  from: '584123765996'
+}
