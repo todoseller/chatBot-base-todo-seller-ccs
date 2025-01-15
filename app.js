@@ -30,7 +30,7 @@ const enviarMensaje = async (datosEntrantes) => {
     }
 };
 
-const flowPrincipal = addKeyword(['xx'])
+const flowPrincipal = addKeyword(['Hola','Alo','Buenas','información'])
     .addAnswer('Hola bienvenido a Todo Seller CCS', 
         { capture: true }, 
         async (ctx, { flowDynamic, fallBack }) => {
