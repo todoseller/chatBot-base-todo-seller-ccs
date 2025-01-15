@@ -1,0 +1,115 @@
+[handleMsg]:  {
+  key: {
+    remoteJid: '584244365940@s.whatsapp.net',
+    fromMe: false,
+    id: '3A3C32C93C0E9FA12F84',
+    participant: undefined
+  },
+  messageTimestamp: 1736910435,
+  pushName: 'Milye!',
+  broadcast: false,
+  message: Message {
+    conversation: 'Xx',
+    messageContextInfo: MessageContextInfo {
+      deviceListMetadata: [DeviceListMetadata],
+      deviceListMetadataVersion: 2,
+      messageSecret: [Uint8Array]
+    }
+  },
+  body: 'Xx',
+  from: '584244365940'
+}
+[QUEUE_SE_ENVIO]:  {
+  ref: 'ans_339e03a3-9956-474c-a282-027d61d12e05',
+  keyword: 'key_b31045bb-8557-45e9-af44-95765bd4d8a2',
+  answer: 'Hola bienvenido a Todo Seller CCS',
+  options: {
+    media: null,
+    buttons: [],
+    capture: true,
+    child: null,
+    delay: 0,
+    idle: null,
+    ref: null,
+    nested: [],
+    keyword: {},
+    callback: true
+  },
+  refSerialize: '10717383f69ccdb8a52f5c9529616c43'
+}
+[handleMsg]:  {
+  key: {
+    remoteJid: '584244365940@s.whatsapp.net',
+    fromMe: false,
+    id: '3A1697B240038EEF5259',
+    participant: undefined
+  },
+  messageTimestamp: 1736910442,
+  pushName: 'Milye!',
+  broadcast: false,
+  message: Message {
+    conversation: 'Nada mejorrrr',
+    messageContextInfo: MessageContextInfo {
+      deviceListMetadata: [DeviceListMetadata],
+      deviceListMetadataVersion: 2,
+      messageSecret: [Uint8Array]
+    }
+  },
+  body: 'Nada mejorrrr',
+  from: '584244365940'
+}
+[handleMsg]:  {
+  key: {
+    remoteJid: '584244365940@s.whatsapp.net',
+    fromMe: false,
+    id: '3A43AEEAFCCC7D8049F0',
+    participant: undefined
+  },
+  messageTimestamp: 1736910483,
+  pushName: 'Milye!',
+  broadcast: false,
+  message: Message {
+    conversation: 'Voy a dormir',
+    messageContextInfo: MessageContextInfo {
+      deviceListMetadata: [DeviceListMetadata],
+      deviceListMetadataVersion: 2,
+      messageSecret: [Uint8Array]
+    }
+  },
+  body: 'Voy a dormir',
+  from: '584244365940'
+}
+[handleMsg]:  {
+  key: {
+    remoteJid: '584244365940@s.whatsapp.net',
+    fromMe: false,
+    id: '3AC74F73E84C8388017F',
+    participant: undefined
+  },
+  messageTimestamp: 1736910495,
+  pushName: 'Milye!',
+  broadcast: false,
+  message: Message {
+    audioMessage: AudioMessage {
+      url: 'https://mmg.whatsapp.net/v/t62.7117-24/19236846_977370987604951_6898439342465566765_n.enc?ccb=11-4&oh=01_Q5AaIL8DfxZkO5uwaIgz80Md1nFqwmk7KcYhCqWA_lTnmBEI&oe=67AEA69E&_nc_sid=5e03e0&mms3=true',
+      mimetype: 'audio/ogg; codecs=opus',
+      fileSha256: [Uint8Array],
+      fileLength: [Long],
+      seconds: 3,
+      ptt: true,
+      mediaKey: [Uint8Array],
+      fileEncSha256: [Uint8Array],
+      directPath: '/v/t62.7117-24/19236846_977370987604951_6898439342465566765_n.enc?ccb=11-4&oh=01_Q5AaIL8DfxZkO5uwaIgz80Md1nFqwmk7KcYhCqWA_lTnmBEI&oe=67AEA69E&_nc_sid=5e03e0',
+      mediaKeyTimestamp: [Long],
+      streamingSidecar: [Uint8Array],
+      waveform: [Uint8Array]
+    },
+    messageContextInfo: MessageContextInfo {
+      deviceListMetadata: [DeviceListMetadata],
+      deviceListMetadataVersion: 2,
+      messageSecret: [Uint8Array]
+    }
+  },
+  body: '_event_voice_note__687882f3-44e0-40d7-b972-6532ab49154a',
+  from: '584244365940'
+}
