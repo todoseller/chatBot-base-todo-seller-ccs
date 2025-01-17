@@ -18,11 +18,20 @@ const enviarMensaje = async (datosEntrantes) => {
 
         console.log("URL a la que se envía la petición:", url);
 
+        const username = process.env.USUARIO;
+        const password = process.env.PASSWORD;
+
         const response = await axios.post(
             url,
             { data: datosEntrantes },
-            { headers: { 'Content-Type': 'application/json' } }
+            {
+                headers: {
+                    'Content-Type': 'application/json',
+                    Authorization: `Basic ${Buffer.from(`${username}:${password}`).toString('base64')}`
+                }
+            }
         );
+
         return response.data;
     } catch (error) {
         console.error('Error en enviarMensaje:', error.message); // Print entire error message
@@ -31,7 +40,7 @@ const enviarMensaje = async (datosEntrantes) => {
 };
 
 const flowPrincipal = addKeyword(['Hola','Alo','Buenas','información'])
-    .addAnswer('Hola bienvenido a Todo Seller CCS', 
+    .addAnswer('Bienvenido a Todo Seller, soy un asistente virtual', 
         { capture: true }, 
         async (ctx, { flowDynamic, fallBack }) => {
 
