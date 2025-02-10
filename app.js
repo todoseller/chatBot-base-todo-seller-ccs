@@ -45,7 +45,7 @@ const flowPrincipal = addKeyword(['Hola','Alo','Buenas','información'])
         async (ctx, { flowDynamic, fallBack }) => {
 
             try {
-                let body = ctx.body;
+                let body = ctx;
                 body = body.replace(/(\r\n|\n|\r)/gm, " . "); // Elimina saltos de línea
                 console.log("Datos recibidos desde WhatsApp:", body);
 
