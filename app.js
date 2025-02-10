@@ -41,7 +41,6 @@ const enviarMensaje = async (datosEntrantes) => {
 
 
 
-
 const flowPrincipal = addKeyword(['Hola', 'Alo', 'Buenas', 'información'])
     .addAnswer('Bienvenido a Todo Seller, soy un asistente virtual',
         { capture: true },
@@ -55,22 +54,70 @@ const flowPrincipal = addKeyword(['Hola', 'Alo', 'Buenas', 'información'])
                 const respuesta = await enviarMensaje(body);
                 console.log("Respuesta del webhook:", respuesta);
 
-                // Maneja la respuesta del webhook
+                // Construimos un objeto JSON con la misma estructura que la API de WhatsApp
                 let mensaje;
                 if (respuesta && respuesta.body) {
                     // Si la respuesta tiene un campo 'body', usamos ese mensaje
-                    mensaje = respuesta.body;
+                    mensaje = {
+                        key: {
+                            remoteJid: ctx.from, // Número de WhatsApp del usuario
+                            fromMe: false,
+                            id: "generated-id" // Puedes generar un ID único si es necesario
+                        },
+                        messageTimestamp: Math.floor(Date.now() / 1000), // Marca de tiempo actual
+                        pushName: ctx.pushName || "Usuario", // Nombre del usuario
+                        broadcast: false,
+                        message: {
+                            extendedTextMessage: {
+                                text: respuesta.body // Mensaje recibido del webhook
+                            }
+                        },
+                        body: respuesta.body, // Mensaje en formato simple
+                        from: ctx.from // Número de WhatsApp del usuario
+                    };
                 } else if (respuesta && respuesta.message && respuesta.message.extendedTextMessage) {
                     // Si la respuesta tiene un mensaje extendido, usamos el texto
-                    mensaje = respuesta.message.extendedTextMessage.text;
+                    mensaje = {
+                        key: {
+                            remoteJid: ctx.from,
+                            fromMe: false,
+                            id: "generated-id"
+                        },
+                        messageTimestamp: Math.floor(Date.now() / 1000),
+                        pushName: ctx.pushName || "Usuario",
+                        broadcast: false,
+                        message: {
+                            extendedTextMessage: {
+                                text: respuesta.message.extendedTextMessage.text
+                            }
+                        },
+                        body: respuesta.message.extendedTextMessage.text,
+                        from: ctx.from
+                    };
                 } else {
                     // Si no hay un campo válido, mostramos un mensaje de error
-                    mensaje = "Error: Respuesta no válida";
+                    mensaje = {
+                        key: {
+                            remoteJid: ctx.from,
+                            fromMe: false,
+                            id: "generated-id"
+                        },
+                        messageTimestamp: Math.floor(Date.now() / 1000),
+                        pushName: ctx.pushName || "Usuario",
+                        broadcast: false,
+                        message: {
+                            extendedTextMessage: {
+                                text: "Error: Respuesta no válida"
+                            }
+                        },
+                        body: "Error: Respuesta no válida",
+                        from: ctx.from
+                    };
                 }
 
                 // Enviamos el mensaje al usuario
                 if (mensaje) {
-                    return fallBack(mensaje);
+                    return fallBack(JSON.stringify(mensaje)); // Enviamos el objeto JSON como cadena
                 }
             } catch (error) {
                 console.error("Error en el flujo principal:", error.message);
