@@ -41,23 +41,35 @@ const enviarMensaje = async (datosEntrantes) => {
 
 
 
+
 const flowPrincipal = addKeyword(['Hola', 'Alo', 'Buenas', 'información'])
     .addAnswer('Bienvenido a Todo Seller, soy un asistente virtual',
         { capture: true },
         async (ctx, { flowDynamic, fallBack }) => {
             try {
                 // Convertimos el objeto ctx a una cadena JSON para enviarlo
-                const body = JSON.stringify(ctx); // Convierte ctx a una cadena JSON
-                console.log("Datos recibidos desde WhatsApp:", body);
+                const body = JSON.stringify(ctx);
+                console.log("Datos enviados al webhook:", body);
 
                 // Envía el objeto ctx completo al webhook
                 const respuesta = await enviarMensaje(body);
                 console.log("Respuesta del webhook:", respuesta);
 
-                // Maneja la respuesta
-                const mensaje = respuesta.output || "Error: Respuesta no válida"; // Ajusta según el formato esperado
+                // Maneja la respuesta del webhook
+                let mensaje;
+                if (respuesta && respuesta.body) {
+                    // Si la respuesta tiene un campo 'body', usamos ese mensaje
+                    mensaje = respuesta.body;
+                } else if (respuesta && respuesta.message && respuesta.message.extendedTextMessage) {
+                    // Si la respuesta tiene un mensaje extendido, usamos el texto
+                    mensaje = respuesta.message.extendedTextMessage.text;
+                } else {
+                    // Si no hay un campo válido, mostramos un mensaje de error
+                    mensaje = "Error: Respuesta no válida";
+                }
 
-                if (body) {
+                // Enviamos el mensaje al usuario
+                if (mensaje) {
                     return fallBack(mensaje);
                 }
             } catch (error) {
@@ -65,6 +77,8 @@ const flowPrincipal = addKeyword(['Hola', 'Alo', 'Buenas', 'información'])
                 await flowDynamic("Lo siento, ocurrió un error al procesar tu solicitud.");
             }
         });
+
+
 
 
 
