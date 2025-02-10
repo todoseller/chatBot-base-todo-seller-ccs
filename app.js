@@ -39,31 +39,34 @@ const enviarMensaje = async (datosEntrantes) => {
     }
 };
 
-const flowPrincipal = addKeyword(['Hola','Alo','Buenas','información'])
-    .addAnswer('Bienvenido a Todo Seller, soy un asistente virtual', 
-        { capture: true }, 
-        async (ctx, { flowDynamic, fallBack }) => {
 
+
+const flowPrincipal = addKeyword(['Hola', 'Alo', 'Buenas', 'información'])
+    .addAnswer('Bienvenido a Todo Seller, soy un asistente virtual',
+        { capture: true },
+        async (ctx, { flowDynamic, fallBack }) => {
             try {
-                let body = ctx;
-                body = body.replace(/(\r\n|\n|\r)/gm, " . "); // Elimina saltos de línea
+                // Convertimos el objeto ctx a una cadena JSON para enviarlo
+                const body = JSON.stringify(ctx); // Convierte ctx a una cadena JSON
                 console.log("Datos recibidos desde WhatsApp:", body);
 
+                // Envía el objeto ctx completo al webhook
                 const respuesta = await enviarMensaje(body);
                 console.log("Respuesta del webhook:", respuesta);
 
                 // Maneja la respuesta
                 const mensaje = respuesta.output || "Error: Respuesta no válida"; // Ajusta según el formato esperado
-                // await flowDynamic(mensaje);
-                if (body) {
-                    return fallBack(mensaje)
-                }
 
+                if (body) {
+                    return fallBack(mensaje);
+                }
             } catch (error) {
                 console.error("Error en el flujo principal:", error.message);
                 await flowDynamic("Lo siento, ocurrió un error al procesar tu solicitud.");
             }
-    });
+        });
+
+
 
 const main = async () => {
     const adapterDB = new MockAdapter();
