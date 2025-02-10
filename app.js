@@ -53,7 +53,7 @@ const flowPrincipal = addKeyword(['Hola','Alo','Buenas','información'])
                 console.log("Respuesta del webhook:", respuesta);
 
                 // Maneja la respuesta
-                const mensaje = respuesta[0].output || "Error: Respuesta no válida"; // Ajusta según el formato esperado
+                const mensaje = respuesta.output || "Error: Respuesta no válida"; // Ajusta según el formato esperado
                 // await flowDynamic(mensaje);
                 if (body) {
                     return fallBack(mensaje)
