@@ -37,7 +37,8 @@ const enviarMensaje = async (datosEntrantes) => {
 };
 
 const flowPrincipal = addKeyword(["Hola", "Alo", "Buenas", "información"])
-    .addAnswer("Bienvenido a Todo Seller, soy un asistente virtual", 
+    .addAnswer("📦 Bienvenido a TodoSeller 🚀, soy tu asistente virtual 🤖 y estoy aquí para ayudarte.
+✨ ¿En qué puedo asistirte? 😊", 
         { capture: true }, 
         async (ctx, { flowDynamic, fallBack }) => {
             try {
